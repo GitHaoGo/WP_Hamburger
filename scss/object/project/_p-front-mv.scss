@@ -1,0 +1,29 @@
+@use "../../foundation/mixin" as m;
+.p-front-mv{
+    position: relative;
+    img{
+        width: 100%;
+        height: 285px;
+        object-fit: cover;
+        @include m.mq(tab) {
+            height: 285px;
+            }
+            @include m.mq(pc) {
+                height:calc(530/16)*1vw; 
+            }
+    }
+    p{
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-size: clamp(2.25rem, 2.189rem + 0.26vw, 2.5rem);
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left:calc(25/16)*1vw;;
+        transform: translateY(-50%);
+        @include m.mq(tab) {
+            left: calc(86/16)*1vw;
+            }
+            
+    }
+}

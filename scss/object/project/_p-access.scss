@@ -1,0 +1,91 @@
+@use "../../foundation/mixin" as m;
+
+.p-access{
+    margin-top: 3.125rem;
+    width: 100%;
+    color: #ffffff;
+    display: grid;
+    &::after{
+        content: "";
+        background-color: (#707070,);
+        opacity: 0.59;
+        width: 100%;
+        height: 500px;
+        grid-area: 1/1;
+        z-index: 1;
+        @include m.mq(tab) {
+            height: 100%;
+            }
+            @include m.mq(pc) {
+            height: 100%;
+            }
+    }
+    
+    iframe{
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1;
+    }
+
+    &__overlay{
+        position: relative;
+        background-color:rgba(0,0,0,0.28);
+        grid-area: 1 / 1;
+        z-index: 3;
+        @include m.mq(tab) {
+            width: 100%;
+            }
+            @include m.mq(pc) {
+            width: 62%;
+            }
+            h2{
+                font-size: clamp(1.875rem, 1.784rem + 0.39vw, 2.25rem);
+                margin: calc(42/16)*1rem;
+                color: #ffffff;
+                @include m.mq(tab) {
+
+                    }
+                    @include m.mq(pc) {
+                    margin-top: calc(85/16)*1vw;
+                    margin-left: calc(119/16)*1vw;
+                    }
+            }
+            span{
+                position: absolute;
+                top: calc(102/16)*1rem;
+                left: calc(42/16)*1rem;
+                width: 50px;
+                height: 5px;
+                background-color: #ffffff;
+                @include m.mq(tab) {
+                    width: 75px;
+                    height: 2px;
+                    }
+                    @include m.mq(pc) {
+                        top: calc(189/16)*1vw;
+                        left: calc(119/16)*1vw;
+                        width: 75px;
+                        height: 2px;
+                    }
+            }
+            p{
+                margin: 40px;
+                margin: calc(40/16)*1rem;
+                // margin-left: calc(40/16)*1vw;
+                font-size: clamp(0.875rem, 0.845rem + 0.13vw, 1rem);
+                line-height: 2;
+                height: auto;
+                @include m.mq(tab) {
+                margin: 42px;
+                margin-top: calc(42/16)*1rem;
+                margin-left: calc(42/16)*1rem;
+                }
+                @include m.mq(pc) {
+                margin: calc(119/16)*1vw;
+                }
+            }
+        
+    }  
+
+}
+

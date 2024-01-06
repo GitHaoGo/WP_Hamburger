@@ -1,0 +1,52 @@
+@use "../../foundation/mixin" as m;
+.c-caption2{
+    margin: 0 20px;
+    @include m.mq(tab) {
+    margin:  0 60px;
+    }
+    @include m.mq(pc) {
+    margin: 0 100px;
+    
+    }
+    h2{
+        font-size: clamp(1.75rem, 1.629rem + 0.52vw, 2.25rem);
+        margin: 25px 0;
+        @include m.mq(tab) {
+            margin:  55px 0;
+        }
+        @include m.mq(pc) {
+        
+        }
+    }
+    p{
+        margin-bottom: 36px;
+        @include m.mq(tab) {
+        margin-bottom: 62px;
+        }
+        @include m.mq(pc) {
+        
+        }
+    }
+    h3{
+        font-size: clamp(1.5rem, 1.439rem + 0.26vw, 1.75rem);
+        margin-bottom: 28px;
+        @include m.mq(tab) {
+            margin-bottom: 56px;
+    
+        }
+        @include m.mq(pc) {
+        
+        }
+    }
+    h4{
+        font-size: 1.25rem;
+        margin-bottom: 34px;
+        @include m.mq(tab) {
+        margin-bottom: 72px;
+        }
+        @include m.mq(pc) {
+        margin-bottom: 57px;
+        }
+    }
+    
+}

@@ -1,0 +1,24 @@
+@use "../../foundation/mixin" as m;
+.c-mv{
+    position: relative;
+    img{
+    width: 100%;
+    height: 206px;
+    object-fit: cover;
+    @include m.mq(tab) {
+        height: 460px;
+        }
+    }
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 26px;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: clamp(2.25rem, 1.886rem + 1.55vw, 3.75rem);
+        @include m.mq(tab) {
+            left: 86px;
+        }
+    }
+    
+}

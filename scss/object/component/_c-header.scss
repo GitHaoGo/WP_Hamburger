@@ -1,0 +1,79 @@
+@use "../../foundation/mixin" as m;
+.c-header{
+    height: 215px;
+    text-align: center;
+    
+    @include m.mq(tab) {
+        display: block;
+        }
+        @include m.mq(pc) {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        }
+    
+    h1{
+        padding: 43px;
+        font-size: clamp(2.5rem, 2.136rem + 1.55vw, 4rem);
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    a{
+        color: #707070;
+        text-decoration: none;
+    }
+
+    form{
+        display: block;
+        margin: 0 0 0 auto;
+        position: relative;
+    }
+    .search{
+        width: 57.5vw;
+        height: 46px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        position: relative;
+        padding: .5rem .5rem .5rem 2rem;
+        @include m.mq(tab) {
+            width: 47vw;
+            }
+            @include m.mq(pc) {
+            width: 25vw;
+            }
+            &+i {
+                position: absolute;
+                top: 50%;
+                left: 11%;
+                transform: translateY(-50%);
+                content: '';
+                color: #707070;
+                opacity: 0.7;
+                @include m.mq(tab) {
+                    left: 20%;
+                    }
+                    @include m.mq(pc) {
+                        left: .5rem;
+                        }
+            }
+    }
+    .search-btn{
+        width: 24vw;
+        height: 46px;
+        border:1px solid #707070;
+        border-radius: 10px;
+        background-color: #F2EDE9;
+        cursor: pointer;
+        @include m.mq(tab) {
+            width: 16.28vw;
+            }
+            @include m.mq(pc) {
+                width: 7.08vw;
+                margin:0 31px 0 14px;
+                }
+    }
+
+}
+
+
+

@@ -1,0 +1,50 @@
+@use "../../foundation/mixin" as m;
+
+.list{
+    display: block;
+    margin-bottom: 26px;
+    @include m.mq(tab) {
+    margin-bottom: 57px;
+    }
+    ol{
+        margin: 38px;
+        @include m.mq(tab) {
+            margin: 17px 131px;
+        }
+        @include m.mq(pc) {
+        margin-left: 171px ;
+        }
+    }
+    .list1{
+        margin-left: 59px ;
+        @include m.mq(tab) {
+        margin-left: 149px;
+        }
+        @include m.mq(pc) {
+            margin-left: 191px;
+        
+        }
+    }
+
+    ul{
+        list-style: none;
+        margin: 17px;
+        @include m.mq(tab) {
+            margin: 17px 110px ;
+        }
+        @include m.mq(pc) {
+            margin-left: 150px;
+        
+        }
+    }
+    .list2{
+        margin: 38px;
+        @include m.mq(tab) {
+            margin: 17px 128px;
+        }
+        @include m.mq(pc) {
+            margin-left: 168px;
+        
+        }
+    }
+}

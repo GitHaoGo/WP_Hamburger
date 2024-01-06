@@ -1,0 +1,222 @@
+@use "../../foundation/mixin" as m;
+.p-brunch{
+    margin: 1.25rem;
+    @include m.mq(tab) {
+    display: flex;
+    margin: calc(40/16)*1vw;
+    }
+    @include m.mq(pc) {
+        display: flex;
+        margin: calc(60/16)*1vw;
+    }
+}
+
+.out{
+    background-image: url(/wp-content/themes/Hamburger_WP/img/take-out.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-end;
+    
+    @include m.mq(tab) {
+        max-width: 50%;
+        margin-right: 2.25rem;
+        margin-right: calc(40/16)*1vw;;
+        margin-bottom: 0;
+        }
+    @include m.mq(pc) {
+        margin-right: 5rem;
+        margin-right: calc(40/16)*1vw;
+        margin-bottom: 0;
+    }
+
+    h2{
+        font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
+        position: absolute;
+        top: 0.8125rem;
+        left: 0.9375rem;
+        color: #EAEAEA ;
+        @include m.mq(tab) {
+        position: absolute;
+        top: 0.875rem;
+        left: 0.6875rem;
+    }
+        @include m.mq(pc) {
+        position: absolute;
+        top: 1.5rem;
+        }
+    }
+
+    span{
+        display: inline-block;
+        position: absolute;
+        top: calc(80/16)*1rem;
+        left: calc(15/16)*1vw;
+        width: 33px;
+        height: 4px;
+        background-color: #FFFFFF;
+        @include m.mq(tab) {
+            top: calc(91/16)*1rem;
+            left: calc(15/16)*1rem;
+            width: 35px;
+            height: 4px;
+            }
+        @include m.mq(pc) {
+            top: calc(161/16)*1rem;
+            left: calc(18.5/16)*1rem;
+            width: 63px;
+            height: 4px;
+        }
+    }
+    dl{
+        display: inline-block;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        color: #3C2A10;
+        height: auto;
+    }
+
+
+    #top{
+        margin: 1rem 1rem 0;
+        @include m.mq(pc) {
+            margin: 1.25rem 1.25rem 0;
+        }
+    }
+    #btm{
+        margin: 1rem;
+        @include m.mq(pc) {
+            margin: 1.25rem;
+        }
+    }
+
+
+    .box{
+        padding-top: calc(298/16)*1rem;
+        @include m.mq(tab) {
+        margin-top: calc(371/16)*1rem;
+        }
+        @include m.mq(pc) {
+        margin-top: calc(600/16)*1rem;
+        }
+    }
+
+    dt{
+        font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
+        font-weight: bold;
+        padding: 1rem 1rem  0.5rem;
+        @include m.mq(tab) {
+            padding: 1rem;
+        }
+        @include m.mq(pc) {
+            padding: 0.875rem 1.25rem 1.125rem;
+        }
+    }
+    dd{
+        padding: 0 1rem 1rem;
+        line-height: 1.4;
+        @include m.mq(pc) {
+            padding: 0 1.25rem 0.875rem;
+        }
+    }
+}
+
+.in{
+    background-image: url(/img/eat-in.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    @include m.mq(tab) {
+        max-width: 50%;
+        }
+    h2{
+        font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
+        position: absolute;
+        top: 0.8125rem;
+        left: 0.9375rem;
+        color: #EAEAEA ;
+        @include m.mq(tab) {
+        position: absolute;
+        top: 0.875rem;
+        left: 0.6875rem;
+    }
+        @include m.mq(pc) {
+        position: absolute;
+        top: 1.5rem;
+        }
+    }
+
+    span{
+        display: inline-block;
+        position: absolute;
+        top: calc(80/16)*1rem;
+        left: calc(15/16)*1vw;
+        width: 33px;
+        height: 4px;
+        background-color: #FFFFFF;
+        @include m.mq(tab) {
+            top: calc(91/16)*1rem;
+            left: calc(15/16)*1rem;
+            width: 35px;
+            height: 4px;
+            }
+        @include m.mq(pc) {
+            top: calc(161/16)*1rem;
+            left: calc(18.5/16)*1rem;
+            width: 63px;
+            height: 4px;
+        }
+    }
+    dl{
+        display: inline-block;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        color: #3C2A10;
+    }
+    #top{
+        margin: 1rem 1rem 0;
+        @include m.mq(pc) {
+            margin: 1.25rem 1.25rem 0;
+        }
+    }
+    #btm{
+        margin: 1rem;
+        @include m.mq(pc) {
+            margin: 1.25rem;
+        }
+    }
+
+
+    .box{
+        padding-top: calc(298/16)*1rem;
+        @include m.mq(tab) {
+        margin-top: calc(371/16)*1rem;
+        }
+        @include m.mq(pc) {
+        margin-top: calc(600/16)*1rem;
+        }
+    }
+
+    dt{
+        font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
+        font-weight: bold;
+        padding: 1rem 1rem  0.5rem;
+        @include m.mq(tab) {
+            padding: 1rem;
+        }
+        @include m.mq(pc) {
+            padding: 0.875rem 1.25rem 1.125rem;
+        }
+    }
+    dd{
+        padding: 0 1rem 1rem;
+        line-height: 1.4;
+        @include m.mq(pc) {
+            padding: 0 1.25rem 0.875rem;
+        }
+    }
+}

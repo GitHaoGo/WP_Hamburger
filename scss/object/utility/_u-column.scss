@@ -1,0 +1,27 @@
+@use "../../foundation/mixin" as m;
+.c-column{
+    margin: 0 20px 30px;
+    padding: 30px 20px;
+    line-height: 1.5;
+    background-color: #F5F5F5;
+    @include m.mq(tab) {
+    margin: 0 60px 60px;
+    padding: 50px;
+    }
+    @include m.mq(pc) {
+        margin: 0 100px 60px;
+    
+    }
+    .text{
+        margin-bottom: 31px;
+        @include m.mq(tab) {
+            margin-bottom: 61px;
+        }
+        @include m.mq(pc) {
+        
+        }
+        
+    }
+
+
+}

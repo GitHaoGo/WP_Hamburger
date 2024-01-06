@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as m;
+.c-caption{
+    margin: 20px 20px 0;
+    @include m.mq(tab) {
+    margin: 42px 42px 0;
+    }
+    @include m.mq(pc) {
+    margin: 100px 100px 0;
+    
+    }
+    
+    h2{
+        font-size: clamp(1.75rem, 1.629rem + 0.52vw, 2.25rem);
+        margin-bottom: 25px;
+        @include m.mq(tab) {
+        margin-bottom: 20px;
+        }
+        @include m.mq(pc) {
+        
+        }
+    }
+    h3{
+        // font-size: 1.25rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        @include m.mq(tab) {
+        margin-bottom: 37px;
+        }
+        @include m.mq(pc) {
+        margin-bottom: 70px;
+        }
+    }
+}
