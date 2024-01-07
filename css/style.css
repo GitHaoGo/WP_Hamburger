@@ -483,7 +483,7 @@ input, select {
 }
 
 .out {
-  background-image: url(/wp-content/themes/Hamburger_WP/img/take-out.png);
+  background-image: url(/wp-content/themes/WP_Hamburger/img/take-out.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -613,7 +613,7 @@ input, select {
 }
 
 .in {
-  background-image: url(/img/eat-in.png);
+  background-image: url(/wp-content/themes/WP_Hamburger/img/eat-in.png);
   background-size: cover;
   background-position: center;
   position: relative;
