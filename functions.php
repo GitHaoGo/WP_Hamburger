@@ -32,3 +32,8 @@
     }
     add_action( 'widgets_init', 'theme_slug_widgets_init' );
         
+// サイト内検索
+// 投稿ページのみ検索されるように設定
+
+
+// 何も記入せずに検索をすると、TOPページにリダイレクトされる設定
