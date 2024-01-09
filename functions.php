@@ -55,3 +55,8 @@ function empty_search_redirect( $wp_query ) {
     }
     add_action( 'parse_query', 'empty_search_redirect' );
 
+// メニューの位置
+register_nav_menus( array(
+    'side'   => 'サイド',
+    'footer' => 'フッター'
+) );
