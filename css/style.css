@@ -277,7 +277,11 @@ input, select {
 }
 
 /* 前への「＜」、次への「＞」 */
-.previouspostslin,
+.previouspostslink {
+  color: #000000;
+  text-decoration: none;
+}
+
 .nextpostslink {
   color: #000000;
   text-decoration: none;

@@ -2,7 +2,7 @@
         <aside class="l-sidebar">
             <div class="c-close-btn"></div>
             <h2><a href="<?php echo home_url(); ?>/menu">Menu</a></h2>
-            <div class="c-gl">
+            <!-- <div class="c-gl">
                 <div class="c-menu">バーガー</div>
                 <ul class="c-sub">
                     <li>ハンバーガー</li>
@@ -28,7 +28,7 @@
                     <li>アップル</li>
                     <li>紅茶（Ice/Hot）</li>
                     <li>コーヒー（Ice/Hot）</li>
-                </ul>
+                </ul> -->
             </div>
         </aside>
     </article>

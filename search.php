@@ -1,12 +1,6 @@
-<?php
-    global $wp_query;
-    $total_results = $wp_query->found_posts;
-    $search_query = get_search_query();
-?>
-<h2><span><?php echo $search_query; ?>の検索結果（<?php echo $total_results; ?>件）</span></h2>
 <?php get_header() ;?>
         <section class="p-archive-mv">
-            <img src="img/archive.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/img/archive.png" alt="">
             <div class="mask"></div>
             <h1>Search:</h1>
             <span></span>
@@ -42,19 +36,10 @@
                 </div>
             <?php endif;?>
 
-            <!-- <figure class="c-card">
-                <div class="card-img">
-                <img src="../img/card.png" alt="">
-                </div>
-                <figcaption>
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <div class="btn">
-                        <button>詳しく見る</button>
-                    </div>
-                </figcaption> -->
-        <div class="pagination">
+        <?php wp_pagenavi(); ?>
+        
+
+        <!-- <div class="pagination">
             <p class="pagination__pos">Page 1/10</p>
             <a class="pagination__btn--first" href="">&lt;&lt;</a>
             <a class="pagination__btn--prev" href="">前へ</a>
@@ -71,7 +56,7 @@
             </ul>
             <a class="pagination__btn--next" id="pe-left" href="">次へ</a>
             <a class="pagination__btn--last" id="pe-right" href="">&gt;&gt;</a>
-        </div>
+        </div> -->
         <div class="c-close-mask"></div>
     </article>
     <?php get_sidebar() ;?>
