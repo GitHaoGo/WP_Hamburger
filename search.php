@@ -6,7 +6,7 @@
 <h2><span><?php echo $search_query; ?>の検索結果（<?php echo $total_results; ?>件）</span></h2>
 <?php get_header() ;?>
         <section class="p-archive-mv">
-            <img src="../img/archive.png" alt="">
+            <img src="img/archive.png" alt="">
             <div class="mask"></div>
             <h1>Search:</h1>
             <span></span>
