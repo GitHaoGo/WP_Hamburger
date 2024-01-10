@@ -1,9 +1,21 @@
 
 <footer class="l-footer">
-        <ul>
+        <!-- <ul>
             <li><a href="page.html" class="bar">ショップ情報</a></li>
             <li><a href="single.html">ヒストリー</a></li>
-        </ul>
+        </ul> -->
+        <?php
+            if ( has_nav_menu( 'footer' )){
+            // メニューの設定を配列で指定
+            $args = array(
+                'theme_location' => 'footer',
+                // 'container_class' => 'l-sidebar',
+                // 'menu_class' => 'c-gl',
+            );
+            // メニューを表示
+            wp_nav_menu( $args ); 
+        }; 
+        ?>
         <p><small>Copyright:RaiseTech</small></p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>

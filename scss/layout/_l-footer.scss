@@ -49,3 +49,35 @@
     }
 }
 
+#menu-footermenu{
+    display: flex;
+        justify-content: center;
+        list-style: none;
+        a{
+            display: block;
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 0 10px;
+        }
+        li{
+            margin-top: 16px;
+            margin-bottom: 70px;
+            font-size: clamp(1.125rem, 1.095rem + 0.13vw, 1.25rem);
+            @include m.mq(tab) {
+                margin-top: 30px;
+                margin-bottom: 44px;
+                }
+                @include m.mq(pc) {
+                    margin-top: 41px;
+                    margin-bottom: 31px;
+        
+                }
+        }
+
+        #menu-item-89 ::after{
+            content: "|";
+                color: #FFFFFF;
+                padding: 0 0 0 20px;
+        }
+
+}

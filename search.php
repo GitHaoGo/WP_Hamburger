@@ -25,7 +25,7 @@
                             <h3><?php the_category(); ?> </h3>
                             <p><?php the_content(); ?></p>
                             <div class="btn">
-                                <button><a href="<?php the_permalink(); ?>/shop">詳しく見る</a></button>
+                                <button><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
                             </div>
                         </figcaption>
                 </figure>

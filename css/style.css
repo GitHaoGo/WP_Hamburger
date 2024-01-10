@@ -54,6 +54,40 @@
   padding: 0 0 0 20px;
 }
 
+#menu-footermenu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#menu-footermenu a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 10px;
+}
+#menu-footermenu li {
+  margin-top: 16px;
+  margin-bottom: 70px;
+  font-size: clamp(1.125rem, 1.095rem + 0.13vw, 1.25rem);
+}
+@media screen and (min-width: 376px) {
+  #menu-footermenu li {
+    margin-top: 30px;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 835px) {
+  #menu-footermenu li {
+    margin-top: 41px;
+    margin-bottom: 31px;
+  }
+}
+#menu-footermenu #menu-item-89 ::after {
+  content: "|";
+  color: #FFFFFF;
+  padding: 0 0 0 20px;
+}
+
 .l-header {
   width: 100%;
   background-color: #FFF7EF;
@@ -311,6 +345,29 @@ input, select {
   list-style: none;
 }
 .c-gl .c-sub li {
+  padding-bottom: 1.25rem;
+  color: #707070;
+}
+
+#menu-item-23,
+#menu-item-25,
+#menu-item-24 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 2.875vw;
+  list-style: none;
+  color: #707070;
+}
+
+.sub-menu li {
+  font-size: 1.25rem;
+  margin-top: 3.75vw;
+  margin-left: 1.25vw;
+  margin-right: 4.125vw;
+  margin-bottom: 3vw;
+  list-style: none;
+}
+.sub-menu li li {
   padding-bottom: 1.25rem;
   color: #707070;
 }

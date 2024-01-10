@@ -29,6 +29,18 @@
                     <li>紅茶（Ice/Hot）</li>
                     <li>コーヒー（Ice/Hot）</li>
                 </ul> -->
+    <?php
+    if ( has_nav_menu( 'side' )){
+	// メニューの設定を配列で指定
+	$args = array(
+		'theme_location' => 'side',
+        'container_class' => 'l-sidebar',
+        'menu_class' => 'c-gl',
+	);
+	// メニューを表示
+	wp_nav_menu( $args ); 
+}; 
+?>
             </div>
         </aside>
     </article>

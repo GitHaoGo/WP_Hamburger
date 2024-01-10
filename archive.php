@@ -16,17 +16,17 @@
                     <figure class="c-card">
                             <div class="card-img">
                             <?php if (has_post_thumbnail()) : ?>
-                                <?php the_post_thumbnail(); ?>
-                                <?php else: ?>
+                            <?php the_post_thumbnail(); ?>
+                            <?php else: ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/card.png" alt="">
-                                <?php endif; ?>
+                            <?php endif; ?>
                             </div>
                             <figcaption>
                                 <h2><?php the_title(); ?></h2>
-                                <h3><?php the_category(); ?> </h3>
+                                <h3>小見出し</h3>
                                 <p><?php the_excerpt(); ?></p>
                                 <div class="btn">
-                                    <button><a href="<?php echo home_url(); ?>/shop">詳しく見る</a></button>
+                                    <button><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
                                 </div>
                             </figcaption>
                     </figure>
