@@ -5,6 +5,7 @@
         </article>
         <section class="p-brunch">
             <div class="out">
+            <a href="<?php echo home_url(); ?>/category/takeout/">
                 <h2>Take Out</h2>
                 <span></span>
                 <div class="box"> 
@@ -25,8 +26,10 @@
                         </dd>
                     </dl>
                 </div>
+                </a>
             </div>
             <div class="in">
+            <a href="<?php echo home_url(); ?>/category/eat-in/">
                 <h2>Eat In</h2>
                 <span></span>
                 <div class="box">

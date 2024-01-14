@@ -1,3 +1,8 @@
+<?php
+/* 
+Template Name: フロント
+*/
+?>
 <?php get_header() ;?>
 <article class="p-front-mv">
             <img src="<?php echo get_template_directory_uri() ?>/img/mv.png" alt="mv">
@@ -5,6 +10,7 @@
         </article>
         <section class="p-brunch">
             <div class="out">
+            <a href="<?php echo home_url(); ?>/category/takeout/">
                 <h2>Take Out</h2>
                 <span></span>
                 <div class="box"> 
@@ -25,8 +31,10 @@
                         </dd>
                     </dl>
                 </div>
+                </a>
             </div>
             <div class="in">
+            <a href="<?php echo home_url(); ?>/category/eat-in/">
                 <h2>Eat In</h2>
                 <span></span>
                 <div class="box">
@@ -47,6 +55,7 @@
                         </dd>
                     </dl>
                 </div>
+                </a>
             </div>
         </section>
 
