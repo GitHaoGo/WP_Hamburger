@@ -2,8 +2,7 @@
         <section class="p-archive-mv">
             <img src="<?php echo get_template_directory_uri() ?>/img/archive.png" alt="">
             <div class="mask"></div>
-            <h1>Menu:</h1>
-            <span></span>
+            <h1>Menu: <span></span></h1>
         </section>
         <section class="c-caption">
             <h2>小見出しが入ります</h2>
@@ -32,45 +31,6 @@
                     </figure>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <!-- <figure class="c-card">
-                <div class="card-img">
-                <img src="../img/card.png" alt="">
-                </div>
-                <figcaption>
-                    <h2>チーズバーガー</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <div class="btn">
-                        <button>詳しく見る</button>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure class="c-card">
-                <div class="card-img">
-                    <img src="../img/card.png" alt="">
-                </div>
-                <figcaption>
-                    <h2>ダブルチーズバーガー</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <div class="btn">
-                        <button>詳しく見る</button>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure class="c-card">
-                <div class="card-img">
-                    <img src="../img/card.png" alt="">
-                </div>
-                <figcaption>
-                    <h2>スペシャルチーズバーガー</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <div class="btn">
-                        <button>詳しく見る</button>
-                    </div>
-                </figcaption>
-            </figure> -->
         </div>
 
         <?php wp_pagenavi(); ?>

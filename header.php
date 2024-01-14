@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body>
 <div class="l-main">
     <article class="l-main__left">
         <header class="l-header">

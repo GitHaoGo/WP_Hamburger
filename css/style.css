@@ -960,14 +960,13 @@ input, select {
     left: 86px;
   }
 }
-.p-archive-mv h1::after {
-  content: "チーズバーガー";
+.p-archive-mv span {
   font-size: 16px;
   display: block;
   padding-top: 10px;
 }
 @media screen and (min-width: 376px) {
-  .p-archive-mv h1::after {
+  .p-archive-mv span {
     padding-left: 19px;
   }
 }
@@ -1310,6 +1309,8 @@ input, select {
   }
 }
 .c-mv h1 {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 26px;
@@ -1320,6 +1321,15 @@ input, select {
 @media screen and (min-width: 376px) {
   .c-mv h1 {
     left: 86px;
+  }
+}
+.c-mv span {
+  font-size: 16px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 376px) {
+  .c-mv span {
+    padding-left: 19px;
   }
 }
 

@@ -10,6 +10,8 @@
         }
     }
     h1{
+        display: flex;
+        align-items: center;
         position: absolute;
         top: 50%;
         left: 26px;
@@ -20,5 +22,11 @@
             left: 86px;
         }
     }
-    
+    span{
+        font-size: 16px;
+        padding-top: 10px;
+        @include m.mq(tab) {
+        padding-left: 19px;
+        }
+    }
 }

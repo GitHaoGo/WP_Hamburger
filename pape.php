@@ -1,13 +1,13 @@
 <?php
 /* 
-Template Name: ショップ情報
+Template Name: ヒストリー
 */
 ?>
 
 <?php get_header() ;?>
         <section class="c-mv">
             <img src="<?php echo get_template_directory_uri() ?>/img/black-steel-lamp-post-1070945.png" alt="">
-            <h1>ショップについて</h1>
+            <h1><?php echo CFS()->get('h1'); ?></h1>
         </section>
         <section class="c-caption2">
             <h2><?php echo CFS()->get('h2'); ?></h2>
@@ -19,24 +19,24 @@ Template Name: ショップ情報
         </section>
         <section class="c-column">
             <p class="text"><?php echo CFS()->get('blockquote'); ?></p>
-            <p class="go">出典元： <a href="">○○○○○○○○○○○○</a></p>
+            <p class="go">出典元： <a href=""><?php echo CFS()->get('link'); ?></a></p>
         </section>
         <section class="c-photocap">
             <div class="c-photocap__top">
-                <img src="<?php echo CFS()->get('カスタムフィールド名'); ?>" >
+                <img src="<?php echo CFS()->get('top'); ?>" >
             </div>
             <div class="c-photocap__flex">
                 <div class="c-photocap__flex--left">
-                    <img src="<?php echo CFS()->get('カスタムフィールド名'); ?>" >
+                    <img src="<?php echo CFS()->get('left'); ?>" >
                     <p><?php echo CFS()->get('right_text'); ?></p>
                 </div>
                 <div class="c-photocap__flex--right">
                     <p><?php echo CFS()->get('left_text'); ?></p>
-                    <img src="<?php echo CFS()->get('カスタムフィールド名'); ?>" >
+                    <img src="<?php echo CFS()->get('right'); ?>" >
                 </div>
             </div>
             <div class="c-photocap__center">
-                <img src="<?php echo CFS()->get('カスタムフィールド名'); ?>" >
+                <img src="<?php echo CFS()->get('center'); ?>" >
             </div>
             <div class="c-photocap__all" >
             <img src="<?php echo CFS()->get('カスタムフィールド名'); ?>" >
@@ -81,34 +81,34 @@ Template Name: ショップ情報
             </ul>
         </article>
         <article class="c-code">
-            <p><?php echo CFS()->get('html'); ?><</p>
-            <p><?php echo CFS()->get('head'); ?></p>
-            <p><?php echo CFS()->get('head_2'); ?></p>
-            <p><?php echo CFS()->get('body'); ?></p>
-            <p><?php echo CFS()->get('body_2'); ?></p>
-            <p><?php echo CFS()->get('html_2'); ?></p>
+            <p><?php echo CFS()->get('a'); ?></p>
+            <p><?php echo CFS()->get('b'); ?></p>
+            <p><?php echo CFS()->get('c'); ?></p>
+            <p><?php echo CFS()->get('d'); ?></p>
+            <p><?php echo CFS()->get('e'); ?></p>
+            <p><?php echo CFS()->get('f'); ?></p>
         </article>
         <article class="c-table">
             <table>
                 <tr>
-                    <td class="left"><?php echo CFS()->get('table'); ?></td>
-                    <td class="right"><?php echo CFS()->get('table'); ?></td>
+                    <td class="left"><?php echo CFS()->get('table_left_1'); ?></td>
+                    <td class="right"><?php echo CFS()->get('table_right_1'); ?></td>
                 </tr>
                 <tr>
-                    <td class="left"><?php echo CFS()->get('table'); ?></td>
-                    <td class="right"><?php echo CFS()->get('table'); ?></td>
+                    <td class="left"><?php echo CFS()->get('table_left_2'); ?></td>
+                    <td class="right"><?php echo CFS()->get('table_right_2'); ?></td>
                 </tr>
                 <tr>
-                    <td class="left"><?php echo CFS()->get('table'); ?></td>
-                    <td class="right"><?php echo CFS()->get('table'); ?></td>
+                    <td class="left"><?php echo CFS()->get('table_left_3'); ?></td>
+                    <td class="right"><?php echo CFS()->get('table_right_3'); ?></td>
                 </tr>
                 <tr>
-                    <td class="left"><?php echo CFS()->get('table'); ?></td>
-                    <td class="right"><?php echo CFS()->get('table'); ?></td>
+                    <td class="left"><?php echo CFS()->get('table_left_4'); ?></td>
+                    <td class="right"><?php echo CFS()->get('table_right_4'); ?></td>
                 </tr>
                 <tr>
-                    <td class="left"><?php echo CFS()->get('table'); ?></td>
-                    <td class="right"><?php echo CFS()->get('table'); ?></td>
+                    <td class="left"><?php echo CFS()->get('table_left_5'); ?></td>
+                    <td class="right"><?php echo CFS()->get('table_right_5'); ?></td>
                 </tr>
             </table>
         </article>

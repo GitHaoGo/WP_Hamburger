@@ -2,8 +2,7 @@
         <section class="p-archive-mv">
             <img src="<?php echo get_template_directory_uri() ?>/img/archive.png" alt="">
             <div class="mask"></div>
-            <h1>Search:</h1>
-            <span></span>
+            <h1>Search: <span><?php the_search_query();?></span></h1>
         </section>
         <section class="c-caption">
             <h2>小見出しが入ります</h2>

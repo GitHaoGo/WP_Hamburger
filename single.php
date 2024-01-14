@@ -3,7 +3,7 @@
     <?php while (have_posts()) : the_post(); ?>
         <section class="c-mv">
             <img src="<?php echo get_template_directory_uri() ?>/img/ham-burger-with-vegetables-1639557.png" alt="">
-            <h1><?php the_title(); ?></h1>
+            <h1>Search: <span><?php the_title(); ?></span></h1>
         </section>
         <section class="c-caption2">
             <h2><?php the_category(); ?></h2>
