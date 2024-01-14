@@ -167,11 +167,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 // ページタブの共通スタイル
 .page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -185,6 +187,9 @@
 
 // 現在のページのタブ 
 .current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -194,6 +199,7 @@
   margin: 20px;
   text-decoration: none;
 }
+
 
 /* 前への「＜」、次への「＞」 */
 .previouspostslink {

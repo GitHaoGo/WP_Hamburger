@@ -285,10 +285,12 @@ input, select {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -300,6 +302,9 @@ input, select {
 }
 
 .current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -361,6 +366,7 @@ input, select {
 
 .sub-menu li {
   font-size: 1.25rem;
+  font-weight: normal;
   margin-top: 3.75vw;
   margin-left: 1.25vw;
   margin-right: 4.125vw;
@@ -1095,6 +1101,10 @@ input, select {
     height: 79px;
   }
 }
+.c-card figcaption button a {
+  text-decoration: none;
+  color: #000;
+}
 
 .c-caption {
   margin: 20px 20px 0;
@@ -1524,6 +1534,10 @@ input, select {
   .c-t-btn {
     margin: 100px;
   }
+}
+.c-t-btn a {
+  text-decoration: none;
+  color: #000;
 }
 
 .bold {

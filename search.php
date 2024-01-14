@@ -21,8 +21,8 @@
                         </div>
                         <figcaption>
                             <h2><?php the_title(); ?></h2>
-                            <h3><?php the_category(); ?> </h3>
-                            <p><?php the_content(); ?></p>
+                            <h3></h3>
+                            <p><?php the_excerpt(); ?></p>
                             <div class="btn">
                                 <button><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
                             </div>

@@ -31,7 +31,7 @@
     }
 }
 
-.c-t-btn{
+.c-t-btn {
     // display: inline-block;
     width: 89%;
     height: 81px;
@@ -47,6 +47,10 @@
     }
     @include m.mq(pc) {
         margin:  100px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
     }
 }
 .bold{
