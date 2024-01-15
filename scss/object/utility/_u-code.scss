@@ -14,3 +14,15 @@
         line-height: 1.5;
     }
 }
+.wp-block-code{
+    background-color: #F5F5F5;
+    padding: 50px;
+    margin: 0 20px 30px;
+    @include m.mq(tab) {
+    margin: 0 60px 60px;
+    }
+    @include m.mq(pc) {
+    margin: 0 100px 50px;
+    }
+
+}

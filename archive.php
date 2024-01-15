@@ -2,7 +2,7 @@
         <section class="p-archive-mv">
             <img src="<?php echo get_template_directory_uri() ?>/img/archive.png" alt="">
             <div class="mask"></div>
-            <h1>Menu: <span></span></h1>
+            <h1>Menu: <span><?php single_cat_title(); ?></span></h1>
         </section>
         <section class="c-caption">
             <h2>小見出しが入ります</h2>
@@ -22,7 +22,7 @@
                             </div>
                             <figcaption>
                                 <h2><?php the_title(); ?></h2>
-                                <h3>小見出し</h3>
+                                <!-- <h3>小見出し</h3> -->
                                 <p><?php the_excerpt(); ?></p>
                                 <div class="btn">
                                     <button><a href="<?php the_permalink(); ?>">詳しく見る</a></button>

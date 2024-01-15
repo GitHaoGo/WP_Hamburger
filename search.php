@@ -36,26 +36,6 @@
             <?php endif;?>
 
         <?php wp_pagenavi(); ?>
-        
-
-        <!-- <div class="pagination">
-            <p class="pagination__pos">Page 1/10</p>
-            <a class="pagination__btn--first" href="">&lt;&lt;</a>
-            <a class="pagination__btn--prev" href="">前へ</a>
-            <ul class="pagination__list">
-                <li class="pagination__item--current"><a href="">1</a></li>
-                <li class="pagination__item"><a href="">2</a></li>
-                <li class="pagination__item"><a href="">3</a></li>
-                <li class="pagination__item"><a href="">4</a></li>
-                <li class="pagination__item"><a href="">5</a></li>
-                <li class="pagination__item"><a href="">6</a></li>
-                <li class="pagination__item"><a href="">7</a></li>
-                <li class="pagination__item"><a href="">8</a></li>
-                <li class="pagination__item"><a href="">9</a></li>
-            </ul>
-            <a class="pagination__btn--next" id="pe-left" href="">次へ</a>
-            <a class="pagination__btn--last" id="pe-right" href="">&gt;&gt;</a>
-        </div> -->
         <div class="c-close-mask"></div>
     </article>
     <?php get_sidebar() ;?>

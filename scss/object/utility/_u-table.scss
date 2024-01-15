@@ -32,7 +32,6 @@
 }
 
 .c-t-btn {
-    // display: inline-block;
     width: 89%;
     height: 81px;
     background-color: #F2EDE9;
@@ -42,7 +41,6 @@
     cursor: pointer;
     @include m.mq(tab) {
     width: 27%;
-    // height: 104px;
     margin:  60px;
     }
     @include m.mq(pc) {
@@ -53,6 +51,7 @@
         color: #000;
     }
 }
+
 .bold{
     margin: 20px 20px 69px 20px;
     font-size: 1rem;

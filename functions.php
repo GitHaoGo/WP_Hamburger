@@ -64,7 +64,7 @@ register_nav_menus( array(
 function WP_Hamburger_script() {
     wp_enqueue_style( 'mplus1p', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap', array() );
     wp_enqueue_style( 'Sacramento', 'get_template_directory_uri()' , '/js/menu.js', array() );
-    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css', array() );
+    wp_enqueue_style( 'font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css", array() );
     wp_enqueue_style( 'normalize', 'https://fonts.googleapis.com', array() );
     wp_enqueue_style( 'style', 'https://fonts.gstatic.com', array());
     wp_enqueue_style( 'style', 'https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js', array());
