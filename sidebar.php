@@ -11,7 +11,7 @@
                 'menu_class' => 'c-gl',
             );
             // メニューを表示
-            wp_nav_menu($args);
+            wp_nav_menu(array('theme_location' => 'side' ));
         };
         ?>
     </aside>

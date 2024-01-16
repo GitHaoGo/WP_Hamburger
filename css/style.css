@@ -2,7 +2,7 @@
 .l-footer {
   width: 100%;
   height: 150px;
-  background: url(/wp-content/themes/WP_Hamburger/img/footer.png);
+  background: url(/wp-content/themes/hamburger/img/footer.png);
   color: #FFFFFF;
 }
 .l-footer ul {
@@ -82,7 +82,7 @@
     margin-bottom: 31px;
   }
 }
-#menu-footermenu #menu-item-89 ::after {
+#menu-footermenu #menu-item-342 ::after {
   content: "|";
   color: #FFFFFF;
   padding: 0 0 0 20px;
@@ -550,7 +550,7 @@ input, select {
 }
 
 .out {
-  background-image: url(/wp-content/themes/WP_Hamburger/img/take-out.png);
+  background-image: url(/wp-content/themes/hamburger/img/take-out.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -680,7 +680,7 @@ input, select {
 }
 
 .in {
-  background-image: url(/wp-content/themes/WP_Hamburger/img/eat-in.png);
+  background-image: url(/wp-content/themes/hamburger/img/eat-in.png);
   background-size: cover;
   background-position: center;
   position: relative;

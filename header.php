@@ -12,6 +12,7 @@
 <?php wp_head(); ?>
 </head>
 <body>
+<?php wp_body_open(); ?>
 <div class="l-main">
     <article class="l-main__left">
         <header class="l-header">
