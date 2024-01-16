@@ -1,8 +1,8 @@
 <?php get_header() ;?>
         <section class="p-archive-mv">
-            <img src="<?php echo get_template_directory_uri() ?>/img/archive.png" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri() ) ?>/img/archive.png" alt="">
             <div class="mask"></div>
-            <h1>Search: <span><?php the_search_query();?></span></h1>
+            <h1>Search: <span><?php echo esc_html(get_search_query()); ?></span></h1>
         </section>
         <section class="c-caption">
             <h2>小見出しが入ります</h2>
@@ -16,7 +16,7 @@
                         <?php if (has_post_thumbnail()) : ?>
                             <?php the_post_thumbnail(); ?>
                             <?php else: ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/card.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/card.png" alt="">
                             <?php endif; ?>
                         </div>
                         <figcaption>
