@@ -2,6 +2,7 @@
     // add_theme_support( 'menus' );  /* テーマにメニューという項目を機能をサポートすることを許可するという記述 */
     add_theme_support( 'title-tag' ); /* タイトルタグのサポートを許可するという記述 */
     add_theme_support('post-thumbnails'); // アイキャッチ画像を有効化
+    add_theme_support( 'automatic-feed-links' );
     add_theme_support(
         'html5', //HTML5でマークアップ
         array(
@@ -61,18 +62,24 @@ register_nav_menus( array(
     'footer' => 'フッター'
 ) );
 
-// function hamburger_script() {
-//     wp_enqueue_style( 'mplus1p', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap', array() );
-//     wp_enqueue_style( 'Sacramento', 'get_template_directory_uri()' , '/js/menu.js', array() );
-//     wp_enqueue_style( 'font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css", array() );
-//     wp_enqueue_style( 'normalize', 'https://fonts.googleapis.com', array() );
-//     wp_enqueue_style( 'style', 'https://fonts.gstatic.com', array());
-//     wp_enqueue_style( 'style', 'https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js', array());
-//     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array());
+//headの読み込み部分
+function hamburger_script() {
+    wp_enqueue_style( 'mplus1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap');
+    wp_enqueue_style( 'awesome', get_template_directory_uri() . '/fontawesome-free-6.5.1-web/css/all.css');
+    wp_enqueue_style( 'js', get_template_directory_uri() .'/js/menu.js');
+    wp_enqueue_style( 'jq', get_template_directory_uri() .'/jQuery/jquery-3.7.1.min.js');
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css');
+}
+add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+
+
+//タイトル出力
+// function hamburger_title( $title ) {
+//     if ( is_front_page() && is_home() ) { //トップページなら
+//         $title = get_bloginfo( 'name', 'display' );
+//     } elseif ( is_singular() ) { //シングルページなら
+//         $title = single_post_title( '', false );
+//     }
+//     return $title;
 // }
-// add_action( 'wp_enqueue_scripts', 'hamburger_script' );
-
-add_theme_support( 'automatic-feed-links' );
-add_theme_support( 'custom-header' );
-add_theme_support( "custom-background");
-
+// add_filter( 'pre_get_document_title', 'hamburger_title' );

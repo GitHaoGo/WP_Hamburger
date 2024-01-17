@@ -12,9 +12,10 @@
 }
 
 .out{
-    background-image: url(/wp-content/themes/hamburger/img/take-out.png);
+    background-image: url(/wp-content/themes/hamburger/img/take-out.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     position: relative;
     margin-bottom: 1.25rem;
     display: flex;
@@ -124,7 +125,7 @@
 }
 
 .in{
-    background-image: url(/wp-content/themes/hamburger/img/eat-in.png);
+    background-image: url(/wp-content/themes/hamburger/img/eat-in.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;

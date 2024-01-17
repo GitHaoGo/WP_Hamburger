@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="p-archive-mv">
-    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive.png" alt="">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive.jpeg" alt="">
     <div class="mask"></div>
     <h1>Menu: <span><?php single_cat_title(); ?></span></h1>
 </section>
@@ -17,7 +17,7 @@
                     <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                     <?php else: ?>
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/card.png" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/card.jpeg" alt="">
                     <?php endif; ?>
                 </div>
                 <figcaption>

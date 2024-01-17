@@ -5,7 +5,7 @@ Template Name: フロント
 ?>
 <?php get_header(); ?>
 <article class="p-front-mv">
-    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/mv.png" alt="mv">
+    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/img/mv.jpeg" alt="mv">
     <p><?php bloginfo('description'); ?></p>
 </article>
 <section class="p-brunch">
