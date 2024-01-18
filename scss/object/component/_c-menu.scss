@@ -8,9 +8,9 @@
 
 }
 
-#menu-item-23 ,
-#menu-item-25 ,
-#menu-item-24 {
+.menu-item-23 ,
+.menu-item-25 ,
+.menu-item-24 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: calc(46/16)*1vw;
@@ -26,7 +26,6 @@
     font-weight: normal;
         margin-top: calc(60/16)*1vw;
         margin-left:calc(20/16)*1vw;
-        // margin-right: calc(66/16)*1vw;
         margin-bottom: calc(48/16)*1vw;
         list-style: none;
         a{
