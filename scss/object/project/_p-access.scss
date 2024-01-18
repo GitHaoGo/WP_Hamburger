@@ -50,7 +50,8 @@
                     margin-left: calc(119/16)*1vw;
                     }
             }
-            span{
+            h2::after{
+                content: "";
                 position: absolute;
                 top: calc(102/16)*1rem;
                 left: calc(42/16)*1rem;

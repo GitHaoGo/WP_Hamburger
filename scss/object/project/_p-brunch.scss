@@ -50,7 +50,8 @@
         }
     }
 
-    span{
+    h2::after{
+        content: "";
         display: inline-block;
         position: absolute;
         top: calc(80/16)*1rem;
@@ -151,7 +152,8 @@
         }
     }
 
-    span{
+    h2::after{
+        content: "";
         display: inline-block;
         position: absolute;
         top: calc(80/16)*1rem;

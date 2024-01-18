@@ -595,7 +595,8 @@ input, select {
     top: 1.5rem;
   }
 }
-.out span {
+.out h2::after {
+  content: "";
   display: inline-block;
   position: absolute;
   top: 5rem;
@@ -605,7 +606,7 @@ input, select {
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 376px) {
-  .out span {
+  .out h2::after {
     top: 5.6875rem;
     left: 0.9375rem;
     width: 35px;
@@ -613,7 +614,7 @@ input, select {
   }
 }
 @media screen and (min-width: 835px) {
-  .out span {
+  .out h2::after {
     top: 10.0625rem;
     left: 1.15625rem;
     width: 63px;
@@ -714,7 +715,8 @@ input, select {
     top: 1.5rem;
   }
 }
-.in span {
+.in h2::after {
+  content: "";
   display: inline-block;
   position: absolute;
   top: 5rem;
@@ -724,7 +726,7 @@ input, select {
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 376px) {
-  .in span {
+  .in h2::after {
     top: 5.6875rem;
     left: 0.9375rem;
     width: 35px;
@@ -732,7 +734,7 @@ input, select {
   }
 }
 @media screen and (min-width: 835px) {
-  .in span {
+  .in h2::after {
     top: 10.0625rem;
     left: 1.15625rem;
     width: 63px;
@@ -891,7 +893,8 @@ input, select {
     margin-left: 7.4375vw;
   }
 }
-.p-access__overlay span {
+.p-access__overlay h2::after {
+  content: "";
   position: absolute;
   top: 6.375rem;
   left: 2.625rem;
@@ -900,13 +903,13 @@ input, select {
   background-color: #ffffff;
 }
 @media screen and (min-width: 376px) {
-  .p-access__overlay span {
+  .p-access__overlay h2::after {
     width: 75px;
     height: 2px;
   }
 }
 @media screen and (min-width: 835px) {
-  .p-access__overlay span {
+  .p-access__overlay h2::after {
     top: 11.8125vw;
     left: 7.4375vw;
     width: 75px;
@@ -1647,5 +1650,11 @@ input, select {
   .bold {
     margin: 100px 100px 274px;
   }
+}
+
+.wp-block-button__lin {
+  color: aqua;
+  background-color: blue;
+  border-radius: 1px;
 }
 /*# sourceMappingURL=style.css.map */

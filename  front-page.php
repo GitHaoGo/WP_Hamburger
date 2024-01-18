@@ -12,7 +12,6 @@ Template Name: フロント
     <div class="out">
         <a href="<?php echo esc_url(home_url('/category/takeout/')); ?>">
             <h2>Take Out</h2>
-            <span></span>
             <div class="box">
                 <dl id="top">
                     <dt>Take Out</dt>
@@ -38,7 +37,6 @@ Template Name: フロント
     <div class="in">
         <a href="<?php echo esc_url(home_url('/category/eat-in/')); ?>">
             <h2>Eat In</h2>
-            <span></span>
             <div class="box">
                 <dl id=top>
                     <dt>Eat In</dt>
