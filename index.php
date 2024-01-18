@@ -4,10 +4,10 @@
     <p><?php bloginfo('description'); ?></p>
 </article>
 <section class="p-brunch">
-    <div class="out">
+    <div class="takeout">
         <a href="<?php echo esc_url(home_url('/category/takeout/')); ?>">
             <h2>Take Out</h2>
-            <div class="box">
+            <div class="text-box">
                 <dl id="top">
                     <dt>Take Out</dt>
                     <dd>
@@ -29,10 +29,10 @@
             </div>
         </a>
     </div>
-    <div class="in">
+    <div class="eat-in">
         <a href="<?php echo esc_url(home_url('/category/eat-in/')); ?>">
             <h2>Eat In</h2>
-            <div class="box">
+            <div class="text-box">
                 <dl id=top>
                     <dt>Eat In</dt>
                     <dd>

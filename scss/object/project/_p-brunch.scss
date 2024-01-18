@@ -11,7 +11,7 @@
     }
 }
 
-.out{
+.takeout{
     background-image: url(/wp-content/themes/hamburger/img/take-out.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@
     }
 
 
-    .box{
+    .text-box{
         padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
         margin-top: calc(371/16)*1rem;
@@ -125,7 +125,7 @@
     }
 }
 
-.in{
+.eat-in{
     background-image: url(/wp-content/themes/hamburger/img/eat-in.jpeg);
     background-size: cover;
     background-position: center;
@@ -194,7 +194,7 @@
     }
 
 
-    .box{
+    .text-box{
         padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
         margin-top: calc(371/16)*1rem;

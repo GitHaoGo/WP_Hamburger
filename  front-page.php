@@ -9,10 +9,10 @@ Template Name: フロント
     <p><?php bloginfo('description'); ?></p>
 </article>
 <section class="p-brunch">
-    <div class="out">
+    <div class="takeout">
         <a href="<?php echo esc_url(home_url('/category/takeout/')); ?>">
             <h2>Take Out</h2>
-            <div class="box">
+            <div class="text-box">
                 <dl id="top">
                     <dt>Take Out</dt>
                     <dd>
@@ -34,10 +34,10 @@ Template Name: フロント
             </div>
         </a>
     </div>
-    <div class="in">
+    <div class="eat-in">
         <a href="<?php echo esc_url(home_url('/category/eat-in/')); ?>">
             <h2>Eat In</h2>
-            <div class="box">
+            <div class="text-box">
                 <dl id=top>
                     <dt>Eat In</dt>
                     <dd>
@@ -65,7 +65,6 @@ Template Name: フロント
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479757770916!2d139.74285797578673!3d35.658580472594515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1701780054734!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="p-access__overlay">
         <h2>見出しが入ります</h2>
-        <span></span>
         <p>
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。

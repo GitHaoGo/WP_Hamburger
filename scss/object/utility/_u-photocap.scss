@@ -17,99 +17,6 @@
             margin-bottom: 60px;
         }
     }
-    &__flex{
-        @include m.mq(tab) {
-            margin-bottom: 60px;
-        }
-        &--left{
-            display: flex;
-            margin-bottom: 30px;
-            
-            @include m.mq(tab) {
-                margin-bottom: 117px;
-            }
-            @include m.mq(pc) {
-                margin-bottom: 60px;
-            
-            }
-            img{
-                width: 40%;
-                height: 89px;
-                object-fit: cover;
-                @include m.mq(tab) {
-                width: 50%;
-                height: 189px;
-                }
-
-                }
-                p{
-                line-height: 1.5;
-                margin-left: 10px;
-                @include m.mq(tab) {
-                    margin-left: 21px;
-                    }
-                    @include m.mq(pc) {
-                    margin-left: 40px;
-                    }
-                }
-            
-        }
-        
-
-        &--right{
-            display: flex;
-            margin-bottom: 30px;
-            img{
-                width: 40%;
-                height: 89px;
-                object-fit: cover;
-                margin-left: 10px;
-                @include m.mq(tab) {
-                width: 50%;
-                height: 189px;
-                margin-left: 21px;
-                }
-                    @include m.mq(pc) {
-                    margin-left: 40px;
-                    }
-                }
-                p{
-                    line-height: 1.5;
-                }
-        }
-    }
-
-
-    &__center{
-        display: block;
-        margin-bottom: 30px;
-        img{
-            display: block;
-            width: 71%;
-            margin: 0 auto;
-        }
-        @include m.mq(tab) {
-            margin-bottom: 240px;
-        }
-        @include m.mq(pc) {
-            margin-bottom: 60px;
-        
-        }
-        
-    }
-    &__all{
-        margin-bottom: 30px;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        @include m.mq(tab) {
-            grid-template-columns: repeat(2,minmax(70px,1fr));
-            }
-            @include m.mq(pc) {
-                grid-template-columns: repeat(3,minmax(170px,1fr));
-            }
-
-    }
 }
 //エディタ
 .wp-block-image{
@@ -121,6 +28,7 @@
             margin-bottom: 60px;
         }
 }
+
 .left{
             margin-bottom: 30px;
             
