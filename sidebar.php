@@ -6,12 +6,14 @@
         if (has_nav_menu('side')) {
             // メニューの設定を配列で指定
             $args = array(
-                'theme_location' => 'side',
-                'container_class' => 'l-sidebar',
-                'menu_class' => 'c-gl',
+                'theme_location' => 'side'
             );
             // メニューを表示
-            wp_nav_menu(array('theme_location' => 'side' ));
+            wp_nav_menu(array(
+                'theme_location' => 'side',
+                'container'=>false,
+                'menu_class' => 'c-gl',
+        ));
         };
         ?>
     </aside>

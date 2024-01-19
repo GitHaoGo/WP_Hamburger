@@ -1,35 +1,57 @@
 @use "../../foundation/mixin" as m;
-
-.menu-cateogrymenu-container{
+.c-gl{ 
     padding-top: 178px;
     @include m.mq(pc) {
         padding: 0;
     }
 
+    // .c-menu{
+    //     font-size: 1.5rem;
+    //     font-weight: bold;
+    //     margin-left: calc(46/16)*1vw;
+    //     margin-bottom: calc(60/16)*1vw;
+    //     list-style: none;
+    //     color: #707070;
+    // }
+    // .c-sub{
+    //     font-size: 1.25rem;
+    //     margin-left:calc(66/16)*1vw;
+    //     margin-right: calc(66/16)*1vw;
+    //     margin-bottom: calc(48/16)*1vw;
+    //     list-style: none;
+    //     li{
+    //     padding-bottom: calc(20/16)*1rem;
+    //     color: #707070;
+    //     }
+        
+    // }
 }
 
-.menu-item-23 ,
-.menu-item-25 ,
-.menu-item-24 {
+
+.c-menu{
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: calc(46/16)*1vw;
-    // margin-bottom: calc(60/16)*1vw;
+    margin-bottom: calc(60/16)*1vw;
     list-style: none;
     color: #707070;
 }
 
 
 
-.sub-menu li {
+.sub-menu {
     font-size: 1.25rem;
-    font-weight: normal;
         margin-top: calc(60/16)*1vw;
+        // margin-left:calc(66/16)*1vw;
         margin-left:calc(20/16)*1vw;
         margin-bottom: calc(48/16)*1vw;
         list-style: none;
-        a{
-        padding-bottom: calc(20/16)*1rem;
-        color: #707070;
-        }
 }
+.sub-menu li{
+    font-weight: 400;
+    display: block;
+    padding-bottom: calc(20/16)*1rem;
+    padding-bottom: 20px;
+    color: #707070;
+    }
+    

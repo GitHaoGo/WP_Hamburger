@@ -4,9 +4,14 @@
         // メニューの設定を配列で指定
         $args = array(
             'theme_location' => 'footer',
+            'container'=>false
+            
         );
         // メニューを表示
-        wp_nav_menu(array('theme_location' => 'footer'));
+        wp_nav_menu(array(
+            'theme_location' => 'footer',
+            'container'=>false
+    ));
     };
     ?>
     <p><small>Copyright: RaiseTech</small></p>

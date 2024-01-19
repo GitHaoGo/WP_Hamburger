@@ -64,13 +64,12 @@ function hamburger_script() {
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
-// タイトル出力
-// function hamburger_title( $title ) {
-//     if ( is_front_page() && is_home() ) { //トップページなら
-//         $title = get_bloginfo( 'name', 'display' );
-//     } elseif ( is_singular() ) { //シングルページなら
-//         $title = single_post_title( '', false );
-//     }
-//     return $title;
-// }
-// add_filter( 'pre_get_document_title', 'hamburger_title' );
+// add_filter('nav_menu_css_class', 'wp_navtag_remove', 100, 1); // liのclassを強制的に全削除
+add_filter('nav_menu_item_id', 'wp_navtag_remove', 100, 1); // liのidを強制的に削除
+
+function wp_navtag_remove($classes) {
+    return array(); // クラスやIDを空の配列にして削除する
+}
+
+
+
