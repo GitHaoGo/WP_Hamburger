@@ -313,6 +313,10 @@ input, select {
   }
 }
 
+.current:hover {
+  opacity: 0.6;
+}
+
 /* 前への「＜」、次への「＞」 */
 .previouspostslink {
   color: #000000;
