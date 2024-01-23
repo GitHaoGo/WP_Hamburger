@@ -128,26 +128,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 20px;
+  @include m.mq(tab) {
+    margin: 40px;
+    }
+    @include m.mq(pc) {
+      margin: 100px;
+    }
 }
 
 // ページタブの共通スタイル
 .page{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #fff;
-  color: #000000;
-  text-decoration: none;
-  border:  1px solid;
-  margin: 20px;
+  display: none;
+  @include m.mq(tab) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    color: #000000;
+    text-decoration: none;
+    border:  1px solid;
+    margin: 8px;
+      }
+      @include m.mq(pc) {
+    margin: 10px;
+      }
 }
 
 
 // 現在のページのタブ 
 .current {
+  display: none;
+  @include m.mq(tab) {
+    cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,8 +173,12 @@
   background: #3C2A10;
   color: #FFFFFF;
   border:  1px solid;
-  margin: 20px;
+  margin: 8px;
   text-decoration: none;
+  }
+  @include m.mq(pc) {
+    margin: 10px;
+  }
 }
 
 
@@ -166,8 +186,33 @@
 .previouspostslink {
   color: #000000;
   text-decoration: none;
+  margin: 0 auto 0 0;
+  @include m.mq(tab) {
+    margin: 10px;
+    }
+    @include m.mq(pc) {
+    }
 }
 .nextpostslink {
   color: #000000;
   text-decoration: none;
+  margin: 0 0 0 auto;
+  @include m.mq(tab) {
+    margin: 10px;
+    }
+    @include m.mq(pc) {
+    }
+  
+}
+
+.pages{
+  display: none;
+  @include m.mq(tab) {
+  display: none;
+  }
+  @include m.mq(pc) {
+  display: block;
+  margin: 10px;
+  }
+
 }

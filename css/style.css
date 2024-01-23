@@ -2,7 +2,7 @@
 .l-footer {
   width: 100%;
   height: 150px;
-  background: url(../../../img/footer.jpeg);
+  background: url(/web/wp-content/themes/hamburger/img/footer.jpeg);
   color: #FFFFFF;
 }
 .l-footer p {
@@ -251,45 +251,102 @@ input, select {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 20px;
+}
+@media screen and (min-width: 376px) {
+  .wp-pagenavi {
+    margin: 40px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .wp-pagenavi {
+    margin: 100px;
+  }
 }
 
 .page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #fff;
-  color: #000000;
-  text-decoration: none;
-  border: 1px solid;
-  margin: 20px;
+  display: none;
+}
+@media screen and (min-width: 376px) {
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid;
+    margin: 8px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .page {
+    margin: 10px;
+  }
 }
 
 .current {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #3C2A10;
-  color: #FFFFFF;
-  border: 1px solid;
-  margin: 20px;
-  text-decoration: none;
+  display: none;
+}
+@media screen and (min-width: 376px) {
+  .current {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #3C2A10;
+    color: #FFFFFF;
+    border: 1px solid;
+    margin: 8px;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 835px) {
+  .current {
+    margin: 10px;
+  }
 }
 
 /* 前への「＜」、次への「＞」 */
 .previouspostslink {
   color: #000000;
   text-decoration: none;
+  margin: 0 auto 0 0;
 }
-
+@media screen and (min-width: 376px) {
+  .previouspostslink {
+    margin: 10px;
+  }
+}
 .nextpostslink {
   color: #000000;
   text-decoration: none;
+  margin: 0 0 0 auto;
+}
+@media screen and (min-width: 376px) {
+  .nextpostslink {
+    margin: 10px;
+  }
+}
+.pages {
+  display: none;
+}
+@media screen and (min-width: 376px) {
+  .pages {
+    display: none;
+  }
+}
+@media screen and (min-width: 835px) {
+  .pages {
+    display: block;
+    margin: 10px;
+  }
 }
 
 .c-gl {
@@ -498,7 +555,7 @@ input, select {
 }
 
 .takeout {
-  background-image: url(/wp-content/themes/hamburger/img/take-out.jpeg);
+  background-image: url(/web/wp-content/themes/hamburger/img/take-out.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -631,7 +688,7 @@ input, select {
 }
 
 .eat-in {
-  background-image: url(wp-content/themes/hamburger/img/eat-in.jpeg);
+  background-image: url(/web/wp-content/themes/hamburger/img/eat-in.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
