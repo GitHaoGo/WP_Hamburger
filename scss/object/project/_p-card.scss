@@ -113,3 +113,41 @@
     }
 
 }
+
+.post{
+    margin: 50px 19px 800px;
+    @include m.mq(tab) {
+    margin: 100px 43px 1000px;
+    // margin: 0 2.688rem;
+    }
+    @include m.mq(pc) {
+        margin: 100px 100px 1000px;
+        // margin: 0 6.25rem;
+    }
+    h2{
+        font-size: clamp(1.25rem, 1.007rem + 1.04vw, 2.25rem);
+    }
+    .fond-btn{
+        width: 89%;
+        height: 81px;
+        background-color: #F2EDE9;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        margin: 20px 0 1000px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include m.mq(tab) {
+                width: 27%;
+                margin:  60px 0 1000px;
+                }
+                @include m.mq(pc) {
+                    margin:  100px 0 1000px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
+                }
+        }
+}

@@ -29,6 +29,7 @@
                 padding: 0 10px;
             }
             li{
+                display: flex;
                 margin-top: 16px;
                 margin-bottom: 70px;
                 font-size: clamp(1.125rem, 1.095rem + 0.13vw, 1.25rem);
@@ -42,16 +43,77 @@
             
                     }
             }
-    
-            .shop ::after{
+            .shop::after{
+                
                 content: "|";
                     color: #FFFFFF;
-                    padding: 0 0 0 20px;
+                    padding: 0 20px;
             }
+    
+            // .shop ::after{
+            //     content: "|";
+            //         color: #FFFFFF;
+            //         padding: 0 0 0 20px;
+            // }
     
     
     }
 }
 
-// wordpressで自動生成されたhtmlへのCSS
 
+
+.wrap_404{
+    margin: 0 19px;
+    @include m.mq(tab) {
+    margin: 0px 43px;
+    margin: 0 2.688rem;
+    }
+    @include m.mq(pc) {
+        margin: 0 100px;
+        margin: 0 6.25rem;
+    }
+    h2{
+        font-size: clamp(1.25rem, 1.007rem + 1.04vw, 2.25rem);
+        margin-top: 100px ;
+        @include m.mq(tab) {
+            margin-top: 100px ;
+            }
+            @include m.mq(pc) {
+            // margin-top: 200px ;
+            }
+    }
+    p{
+        font-size: clamp(1rem, 0.879rem + 0.52vw, 1.5rem);
+        margin-top: 100px ;
+        @include m.mq(tab) {
+            margin-top: 100px ;
+            }
+            @include m.mq(pc) {
+            margin-top: 100px ;
+            }
+    }
+    
+    .fond-btn{
+    width: 89%;
+    height: 81px;
+    background-color: #F2EDE9;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    margin: 20px 0 1000px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include m.mq(tab) {
+            width: 27%;
+            margin:  60px 0 1000px;
+            }
+            @include m.mq(pc) {
+                margin:  100px 0 1000px;
+            }
+            a{
+                text-decoration: none;
+                color: #000;
+            }
+    }
+}

@@ -6,14 +6,18 @@
     <h1>Search: <span><?php echo esc_html(get_search_query()); ?></span></h1>
 </section>
 
-<section class="c-caption">
+<!-- <section class="c-caption">
     <h2>小見出しが入ります</h2>
     <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
-</section>
+</section> -->
 
 <div class="c-wrap">
     <?php if (have_posts() && get_search_query()) : ?>
         <?php while (have_posts()) : the_post(); ?>
+        <section class="c-caption">
+            <h2>小見出しが入ります</h2>
+            <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
+        </section>
             <figure class="c-card">
                 <div class="card-img">
                     <?php if (has_post_thumbnail()) : ?>
@@ -33,7 +37,8 @@
         <?php endwhile; ?>
     <?php else: ?>
         <div class="post">
-            <p>申し訳ございません。<br>該当する記事がございません。</p>
+            <h2>申し訳ございません。該当する記事がございません。</h2>
+            <div class="fond-btn"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップページに戻る</a></div>
         </div>
     <?php endif; ?>
 </div>

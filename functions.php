@@ -34,13 +34,13 @@ function my_posy_search($search) {
 }
 add_filter('posts_search', 'my_posy_search');
 
-// 何も記入せずに検索をすると、TOPページにリダイレクトされる設定
+// 何も記入せずに検索をすると、menuページにリダイレクトされる設定
 function empty_search_redirect( $wp_query ) {
     if ( $wp_query->is_main_query() && $wp_query->is_search && ! $wp_query->is_admin ) {
         $s = $wp_query->get( 's' );
         $s = trim( $s );
         if ( empty( $s ) ) {
-            wp_safe_redirect( home_url('/') );
+            wp_safe_redirect( home_url('/menu/') );
             exit;
         }
     }
