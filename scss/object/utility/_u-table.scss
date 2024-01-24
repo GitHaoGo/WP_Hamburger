@@ -31,26 +31,26 @@
     }
 }
 
-.c-t-btn {
-    width: 89%;
-    height: 81px;
-    background-color: #F2EDE9;
-    border: 1px solid #707070;
-    border-radius: 10px;
-    margin: 0 20px 0 20px;
-    cursor: pointer;
-    @include m.mq(tab) {
-    width: 27%;
-    margin:  60px;
-    }
-    @include m.mq(pc) {
-        margin:  100px;
-    }
-    a{
-        text-decoration: none;
-        color: #000;
-    }
-}
+// .c-t-btn {
+//     width: 89%;
+//     height: 81px;
+//     background-color: #F2EDE9;
+//     border: 1px solid #707070;
+//     border-radius: 10px;
+//     margin: 0 20px 0 20px;
+//     cursor: pointer;
+//     @include m.mq(tab) {
+//     width: 27%;
+//     margin:  60px;
+//     }
+//     @include m.mq(pc) {
+//         margin:  100px;
+//     }
+//     a{
+//         text-decoration: none;
+//         color: #000;
+//     }
+// }
 
 .bold{
     margin: 20px 20px 69px 20px;
@@ -62,3 +62,29 @@
     margin: 100px 100px 274px;
     }
 }
+
+
+.c-t-btn {
+        margin: 0 20px 0 20px;
+        cursor: pointer;
+        @include m.mq(tab) {
+        margin:  60px;
+        }
+        @include m.mq(pc) {
+            margin:  100px;
+        }
+    }
+
+    .wp-block-button__link {
+    display: flex;
+    width: 89%;
+    height: 81px;
+    justify-content: center;
+    align-items: center;
+    }
+    .wp-block-button{
+        background-color: #F2EDE9;
+        border: 1px solid #707070;
+        border-radius: 10px;
+
+    }

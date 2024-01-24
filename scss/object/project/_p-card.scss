@@ -82,6 +82,7 @@
             padding-bottom: 50px;
         }
         button{
+            cursor: pointer;
             display: block;
             width: 160px;
             height: 42px;
@@ -103,6 +104,12 @@
                 color: #000;
             }
         }
+        button:hover{
+            opacity: .6;
+        }
+        // a:hover{
+        //     color: #3C2A10;
+        // }
     }
 
 }
