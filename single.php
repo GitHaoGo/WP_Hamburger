@@ -2,7 +2,7 @@
 
 <section class="c-mv">
     <?php the_post_thumbnail(); ?>
-    <h1>Search: <span><?php the_title(); ?></span></h1>
+    <h1><?php the_title(); ?></h1>
 </section>
 
 <?php if (have_posts()) : ?>

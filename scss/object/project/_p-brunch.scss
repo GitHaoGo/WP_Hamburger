@@ -12,7 +12,7 @@
 }
 
 .takeout{
-    background-image: url(/web/wp-content/themes/hamburger/img/take-out.jpeg);
+    background-image: url(web/wp-content/themes/hamburger/img/take-out.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -55,19 +55,19 @@
         display: inline-block;
         position: absolute;
         top: calc(80/16)*1rem;
-        left: calc(15/16)*1vw;
+        left: calc(7/16)*1vw;
         width: 33px;
         height: 4px;
         background-color: #FFFFFF;
         @include m.mq(tab) {
             top: calc(91/16)*1rem;
-            left: calc(15/16)*1rem;
+            left: calc(7/16)*1rem;
             width: 35px;
             height: 4px;
             }
         @include m.mq(pc) {
-            top: calc(161/16)*1rem;
-            left: calc(18.5/16)*1rem;
+            top: calc(100/16)*1rem;
+            left: calc(7/16)*1rem;
             width: 63px;
             height: 4px;
         }
@@ -127,7 +127,7 @@
 
 
 .eat-in{
-    background-image: url(/web/wp-content/themes/hamburger/img/eat-in.jpeg);
+    background-image: url(web/wp-content/themes/hamburger/img/eat-in.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -158,19 +158,19 @@
         display: inline-block;
         position: absolute;
         top: calc(80/16)*1rem;
-        left: calc(15/16)*1vw;
+        left: calc(7/16)*1vw;
         width: 33px;
         height: 4px;
         background-color: #FFFFFF;
         @include m.mq(tab) {
             top: calc(91/16)*1rem;
-            left: calc(15/16)*1rem;
+            left: calc(7/16)*1rem;
             width: 35px;
             height: 4px;
             }
         @include m.mq(pc) {
-            top: calc(161/16)*1rem;
-            left: calc(18.5/16)*1rem;
+            top: calc(100/16)*1rem;
+            left: calc(7/16)*1rem;
             width: 63px;
             height: 4px;
         }

@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <section class="p-archive-mv">
+<div class="mask"></div>
     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive.jpeg" alt="">
-    <div class="mask"></div>
+    
     <h1>Menu: <span><?php single_cat_title(); ?></span></h1>
 </section>
 
@@ -25,7 +26,7 @@
                     <h2><?php the_title(); ?></h2>
                     <?php the_excerpt(); ?>
                     <div class="btn">
-                        <button><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
+                        <a href="<?php the_permalink(); ?>">詳しく見る</a>
                     </div>
                 </figcaption>
             </figure>

@@ -80,36 +80,31 @@
         }
         .btn{
             padding-bottom: 50px;
-        }
-        button{
-            cursor: pointer;
-            display: block;
-            width: 160px;
-            height: 42px;
-            border-radius: 50px;
-            margin: 0 auto;
-            font-weight: bold;
-            @include m.mq(tab) {
-                width: 50%;
-                height: 42px;
-                margin: 0 auto;
-                margin-bottom: calc(50/16)*1vw;
-            }
-            @include m.mq(pc) {
-                width: 50%;
-                height: 79px;
-            }
             a{
+                display: flex;
+                width: 160px;
+                height: 42px;
+                border-radius: 50px;
+                margin: 0 auto;
+                font-weight: bold;
                 text-decoration: none;
                 color: #000;
+                align-items: center;
+                justify-content: center;
+                background-color: #F2EDE9;
+                @include m.mq(tab) {
+                    width: 50%;
+                    height: 42px;
+                    margin: 0 auto;
+                    margin-bottom: calc(50/16)*1vw;
+                }
+                @include m.mq(pc) {
+                    width: 50%;
+                    height: 79px;
+                }
             }
         }
-        button:hover{
-            opacity: .6;
-        }
-        // a:hover{
-        //     color: #3C2A10;
-        // }
+
     }
 
 }
