@@ -28,19 +28,13 @@
         transition: 0.5s;
         overflow: auto;
         background-color: #F2EDE9;
-        @include m.mq(tab) {
-            // transform: translateX(0);
-            // position: static;
-            }
             @include m.mq(pc) {
             transform: translateX(0);
             position: static;
-            
-
             }
     }
     &__right.open{
-        width: 87%;
+        width: 80%;
         height: 100%;
         z-index: 2000;
         transform: translateX(0);
@@ -53,6 +47,7 @@
             top: 0;
             right: 0;
             height: 100%;
+
             }
     }
 
