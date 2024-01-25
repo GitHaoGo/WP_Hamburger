@@ -200,6 +200,15 @@
     width: 43%;
   }
 }
+@media screen and (min-width: 960px) {
+  .l-main__right.open {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+}
 
 .l-sidebar h2 {
   display: block;
@@ -632,7 +641,6 @@ input, select {
   background-color: #000000;
   opacity: 0.8;
 }
-
 .p-brunch {
   margin: 1.25rem;
 }
@@ -650,7 +658,7 @@ input, select {
 }
 
 .takeout {
-  background-image: url(web/wp-content/themes/hamburger/img/take-out.jpeg);
+  background-image: url(/web/wp-content/themes/hamburger/img/take-out.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -783,7 +791,7 @@ input, select {
 }
 
 .eat-in {
-  background-image: url(web/wp-content/themes/hamburger/img/eat-in.jpeg);
+  background-image: url(/web/wp-content/themes/hamburger/img/eat-in.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;

@@ -16,6 +16,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        
     }
 
     &__right{
@@ -28,10 +29,14 @@
         overflow: auto;
         background-color: #F2EDE9;
         @include m.mq(tab) {
+            // transform: translateX(0);
+            // position: static;
             }
             @include m.mq(pc) {
-                transform: translateX(0);
-                position: static;
+            transform: translateX(0);
+            position: static;
+            
+
             }
     }
     &__right.open{
@@ -41,6 +46,13 @@
         transform: translateX(0);
         @include m.mq(tab) {
             width: 43%;
+            }
+            @include m.mq(pc) {
+            width: 20%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
             }
     }
 
