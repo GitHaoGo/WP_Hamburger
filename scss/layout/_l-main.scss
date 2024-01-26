@@ -29,7 +29,7 @@
         overflow: auto;
         background-color: #F2EDE9;
             @include m.mq(pc) {
-            transform: translateX(0);
+            // transform: translateX(0);
             position: static;
             }
     }
