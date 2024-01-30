@@ -11,7 +11,7 @@
     <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
 </section>
 
-<div class="c-news_wrap">
+<div class="c-wrap">
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <figure class="c-news-card">
@@ -24,9 +24,9 @@
                 </div>
                 <figcaption class="c-news-cap">
                     <h2><?php the_title(); ?></h2>
-                    <?php the_category(); ?>
-                    <?php the_tags(); ?>
-                    <?php the_excerpt(); ?>
+                    <div class="cate"><?php the_category(); ?></div>
+                    <div class="tag"><?php the_tags(); ?> </div>
+                    <p class="ex"><?php the_excerpt(); ?></p>
                     <div class="btn_news">
                         <a href="<?php the_permalink(); ?>">詳しく見る</a>
                     </div>
