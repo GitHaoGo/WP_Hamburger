@@ -16,7 +16,7 @@
         ));
         };
         ?>
-        <h2><a href="<?php echo esc_url(home_url('/news/')); ?>">お知らせ</a></h2>
+
     </aside>
 </article>
 </div>
