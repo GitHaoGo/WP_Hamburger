@@ -1,0 +1,149 @@
+@use "../../foundation/mixin" as m;
+
+#post{
+    margin-bottom: 0;
+}
+
+.recommend{
+    margin: 0 19px;
+    color: #3C2A10;
+    font-size: 36px;
+    @include m.mq(tab) {
+    margin: 0px 43px;
+    margin: 0 2.688rem;
+    }
+    @include m.mq(pc) {
+        margin: 0 100px;
+        margin: 0 6.25rem 25px
+    }
+}
+.recommend::before{
+    content: "★";
+    padding: 8px;
+}
+.reco_link{
+    margin-bottom: 120px;
+    a{
+    display: block;
+    margin: 0 19px;
+    color: #3C2A10;
+    padding-left: 8px;
+    @include m.mq(tab) {
+        margin: 0px 43px;
+        margin: 0 2.688rem;
+        }
+        @include m.mq(pc) {
+            margin: 0 100px;
+            margin: 0 6.25rem;
+            
+        }
+
+    }
+    
+}
+.goods{  
+    margin: 0 19px;
+    font-size: 36px;
+    color: #3C2A10;
+    @include m.mq(tab) {
+    margin: 0px 43px;
+    margin: 0 2.688rem;
+    }
+    @include m.mq(pc) {
+        margin: 0 100px;
+        margin: 0 6.25rem 25px;
+    }
+
+}
+.goods::before{
+    content: "★";
+    padding: 8px;
+}
+
+.c-yet{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 19px;
+    @include m.mq(tab) {
+    margin: 0px 43px;
+    margin: 0 2.688rem;
+    grid-template-columns: repeat(2,minmax(70px,1fr));
+    }
+    @include m.mq(pc) {
+        margin: 0 100px;
+        margin: 0 6.25rem;
+        grid-template-columns: repeat(3,minmax(170px,1fr))
+        
+    }
+}
+
+.c-yetcard{
+    width: 100%;
+    flex-direction: column;
+    margin: 10px;
+    @include m.mq(tab) {
+
+        }
+        @include m.mq(pc) {
+        
+        }
+    .card-img{
+        img{
+        width: 100% ;
+        height: 300px;
+        object-fit: cover;
+        @include m.mq(tab) {
+
+        }
+        @include m.mq(pc) {
+        
+        }
+        }
+    }
+
+    figcaption{
+
+        background-color:#F9F0E2;
+        @include m.mq(tab) {
+        
+        }
+        h3{
+            @include m.mq(tab) {
+                
+            }
+            @include m.mq(pc) {
+                
+            }
+        }
+        p{
+
+            @include m.mq(tab) {
+                
+            }
+            @include m.mq(pc) {
+
+            }
+        }
+
+        .yet-btn{
+            display: block;
+            
+            a{
+                text-decoration: underline;
+                color: #000;
+                display: block;
+                text-align: right;
+                padding: 20px;
+                @include m.mq(tab) {
+
+                }
+                @include m.mq(pc) {
+        
+                }
+            }
+        }
+
+    }
+
+}

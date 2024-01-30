@@ -7,11 +7,16 @@
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
             <?php the_content(); ?>
-        </div>
+    
     <?php endwhile; ?>
 <?php endif; ?>
+
+<p class="recommend"><?php echo CFS()->get('recommend'); ?></p>
+<p class="reco_link"><a href=""><?php echo CFS()->get('reco_link'); ?></a></p>
+<p class="goods"><?php echo CFS()->get('goods'); ?></p>
+<?php yarpp_related(); ?>
 
 <div class="c-close-mask"></div>
 </article>

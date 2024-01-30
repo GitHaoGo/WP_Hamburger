@@ -3,7 +3,7 @@
 <div class="mask"></div>
     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive.jpeg" alt="">
     
-    <h1>Menu: <span><?php single_cat_title(); ?></span></h1>
+    <h1>News: <span></span></h1>
 </section>
 
 <section class="c-caption">
@@ -11,30 +11,23 @@
     <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
 </section>
 
-<div class="c-wrap">
+<div class="c-news_wrap">
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-            <figure class="c-card">
+            <figure class="c-news-card">
                 <div class="card-img">
                     <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                     <?php else: ?>
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/card.jpeg" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/news.jpg" alt="">
                     <?php endif; ?>
                 </div>
-                <figcaption>
-                <?php
-                $days = 14;
-                $now = date_i18n('U');
-                $entry = get_the_time('U');
-                $term = date('U',($now - $entry)) / 86400;
-                if( $days > $term ){
-                echo '<span class="new">NEW</span>';
-                }
-                ?>
+                <figcaption class="c-news-cap">
                     <h2><?php the_title(); ?></h2>
+                    <?php the_category(); ?>
+                    <?php the_tags(); ?>
                     <?php the_excerpt(); ?>
-                    <div class="btn">
+                    <div class="btn_news">
                         <a href="<?php the_permalink(); ?>">詳しく見る</a>
                     </div>
                 </figcaption>

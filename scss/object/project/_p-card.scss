@@ -1,4 +1,15 @@
 @use "../../foundation/mixin" as m;
+
+.new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+}
+
 .c-wrap{
     margin: 0 19px;
     @include m.mq(tab) {
@@ -31,6 +42,7 @@
 
     figcaption{
         color: #FFFFFF;
+        position: relative;
         @include m.mq(tab) {
         width: 100%;
         }
