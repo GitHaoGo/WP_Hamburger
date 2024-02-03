@@ -85,8 +85,9 @@ function new_post_type() {
             'search_items' => '検索',
             ),
             'public' => true,
-            // 'hierarchicla' => true,
+            'hierarchical' => true,
             'has_archive' => true,
+            'show_in_rest' => true,
             'exclude_from_search' => true,
             'supports' => array(
             'title',
@@ -111,6 +112,7 @@ function new_post_type() {
             ),
             'public' => true,
             'hierarchical' => true,
+            'show_in_rest' => true,
             'rewrite' => array('slug' => 'news-cat') 
         )
         );
@@ -124,8 +126,10 @@ function new_post_type() {
             'public' => true,
             'show_in_rest' => true,
             'update_count_callback' => '_update_post_term_count',
+            
             )
         );
         }
     add_action('init', 'new_post_type');
+
 

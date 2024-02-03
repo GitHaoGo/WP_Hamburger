@@ -1,10 +1,15 @@
-<?php get_header(); ?>
+<?php
+get_header();
+$taxonomy = 'news-tag'; // タームが属するタクソノミーのスラッグ
+// 現在表示中のターム情報を取得
+$term = get_queried_object();
+?>
 
 <section class="p-archive-mv">
 <div class="mask"></div>
     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive.jpeg" alt="">
-    
-    <h1>News: <span>全ての記事一覧 (<?php echo $wp_query->found_posts; ?>件)</span></h1>
+    <!-- // タームアーカイブのタイトルを表示 -->
+    <h1>News: <span>お知らせタグ<?php echo '' . single_term_title() . '(' . $term->count . '件)'  ?></span></h1>
 </section>
 
 <section class="c-caption">
@@ -12,10 +17,25 @@
     <h3>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</h3>
 </section>
 
-
 <div class="c-wrap">
-    <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
+    <?php
+    // タームに属する記事を表示
+    $args = array(
+        'post_type' => 'news', // カスタム投稿タイプのスラッグ
+        'tax_query' => array(
+            array(
+                'taxonomy' => $taxonomy,
+                'field'    => 'slug',
+                'terms'    => $term->slug,
+            ),
+        ),
+    );
+
+    $term_query = new WP_Query($args);
+
+    if ($term_query->have_posts()) :
+        while ($term_query->have_posts()) : $term_query->the_post();
+            ?>
             <figure class="c-news-card">
                 <div class="card-img">
                     <?php if (has_post_thumbnail()) : ?>
@@ -26,7 +46,6 @@
                 </div>
                 <figcaption class="c-news-cap">
                     <h2><?php the_title(); ?></h2>
-                    <!-- カテゴリーというタクソノミーのタームを表示 -->
                     <div class="cate">
                     <?php
                     $terms = get_terms( 'news-cat');
@@ -46,8 +65,13 @@
                     </div>
                 </figcaption>
             </figure>
-        <?php endwhile; ?>
-    <?php endif; ?>
+            <?php
+        endwhile;
+    else :
+        echo '該当する記事はありません。';
+    endif;
+    wp_reset_postdata(); // カスタムクエリをリセット
+    ?>
 </div>
 
 <?php wp_pagenavi(); ?>

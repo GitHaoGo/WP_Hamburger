@@ -31,6 +31,28 @@
     .c-news-cap{
         padding-left: 40px;
         margin-bottom: 32px;
+        .cate a{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 8px;
+            padding: 0 5px 0 0;
+        }
+        .tag a{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d9d9d9;
+            border-radius: 17px;
+            width: 70px;
+            height: 20px;
+            color: #000;
+            text-decoration: none;
+            margin-right: 8px;
+            margin-bottom: 16px;
+        }
         h2{
             font-size: clamp(1.25rem, 1.007rem + 1.04vw, 2.25rem);
             padding-bottom: 8px;
@@ -53,7 +75,6 @@
 
         }
         .tag{
-            
             padding-bottom:16px ;
             @include m.mq(tab) {
             

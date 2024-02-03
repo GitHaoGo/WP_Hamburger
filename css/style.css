@@ -1267,6 +1267,28 @@ input, select {
   padding-left: 40px;
   margin-bottom: 32px;
 }
+.c-news-card .c-news-cap .cate a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 8px;
+  padding: 0 5px 0 0;
+}
+.c-news-card .c-news-cap .tag a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+  border-radius: 17px;
+  width: 70px;
+  height: 20px;
+  color: #000;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
 .c-news-card .c-news-cap h2 {
   font-size: clamp(1.25rem, 1.007rem + 1.04vw, 2.25rem);
   padding-bottom: 8px;
