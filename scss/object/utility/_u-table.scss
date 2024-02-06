@@ -68,3 +68,26 @@
         border-radius: 10px;
 
     }
+
+    .tax-wrap{
+        margin: 20px 20px 0;
+        @include m.mq(tab) {
+        margin: 42px 42px 0;
+        }
+        @include m.mq(pc) {
+        margin: 100px 100px 0;
+        
+        }
+        h1{
+            font-size: 36px;
+            color: #000;
+            margin-bottom: 300px;
+        }
+        .tax-text{
+            color: #000;
+            line-height: 2;
+            margin-bottom: 500px;
+        }
+
+    }
+    

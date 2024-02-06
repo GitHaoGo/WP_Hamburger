@@ -1946,6 +1946,30 @@ input, select {
   border-radius: 10px;
 }
 
+.tax-wrap {
+  margin: 20px 20px 0;
+}
+@media screen and (min-width: 601px) {
+  .tax-wrap {
+    margin: 42px 42px 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tax-wrap {
+    margin: 100px 100px 0;
+  }
+}
+.tax-wrap h1 {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 300px;
+}
+.tax-wrap .tax-text {
+  color: #000;
+  line-height: 2;
+  margin-bottom: 500px;
+}
+
 a:hover {
   opacity: 0.6;
 }

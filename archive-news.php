@@ -28,18 +28,26 @@
                     <h2><?php the_title(); ?></h2>
                     <!-- カテゴリーというタクソノミーのタームを表示 -->
                     <div class="cate">
-                    <?php
-                    $terms = get_terms( 'news-cat');
-                    foreach ( $terms as $term ){
-                    echo '<a href="'.get_term_link($term->slug, 'news-cat').'">'.$term->name.'</a>'; }
-                    ?>
+                        <?php
+                        $terms = get_the_terms(get_the_ID(), 'news-cat');
+                        if ($terms && !is_wp_error($terms)) {
+                            foreach ($terms as $term) {
+                                echo '<a href="' . esc_url(get_term_link($term->slug, 'news-cat')) . '">' . esc_html($term->name) . '</a>';
+                            }
+                        }
+                        ?>
                     </div>
                     <!-- タグというタクソノミーのタームを表示 -->
-                    <div class="tag"><?php
-                    $terms = get_terms( 'news-tag');
-                    foreach ( $terms as $term ){
-                    echo '<a href="'.get_term_link($term->slug, 'news-tag').'">'.$term->name.'</a>'; }
-                    ?></div>
+                    <div class="tag">
+                        <?php
+                        $tags = get_the_terms(get_the_ID(), 'news-tag');
+                        if ($tags && !is_wp_error($tags)) {
+                            foreach ($tags as $tag) {
+                                echo '<a href="' . esc_url(get_term_link($tag->slug, 'news-tag')) . '">' . esc_html($tag->name) . '</a>';
+                            }
+                        }
+                        ?>
+                    </div>
                     <p class="ex"><?php the_excerpt(); ?></p>
                     <div class="btn_news">
                         <a href="<?php the_permalink(); ?>">詳しく見る</a>

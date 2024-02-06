@@ -16,7 +16,6 @@
         ));
         };
         ?>
-
     </aside>
 </article>
 </div>
